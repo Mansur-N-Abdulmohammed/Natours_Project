@@ -1,0 +1,86 @@
+.header-section {
+  height: 95vh;
+  background-image: linear-gradient(
+      140deg,
+      rgba(126, 213, 111, 0.8),
+      rgba(41, 181, 134, 0.8)
+    ),
+    url(../media/img/hero.jpg);
+  background-size: cover;
+  background-position: top center;
+
+  position: relative;
+  color: var(--text-color);
+
+  clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+}
+
+.logo-section {
+  position: absolute;
+  top: 4rem;
+  left: 4rem;
+}
+.logo-section .logo {
+  height: 3.5rem;
+}
+
+.header-section .hero-section {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+}
+.header-section .hero-section .title {
+  font-size: 5.2rem;
+  font-weight: 500;
+  letter-spacing: 3rem;
+  font-family: var(--main-font);
+}
+.header-section .hero-section .discription {
+  font-size: 1.6rem;
+  letter-spacing: 1.6rem;
+  font-weight: 700;
+  margin: 0rem 0 6.4rem 0;
+}
+.main-btn:link,
+.main-btn:visited {
+  background-color: var(--text-color);
+  padding: 1.2rem 3.6rem;
+  border-radius: 10rem;
+  display: inline-block;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.menu-btn {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
+  position: fixed;
+  right: 6rem;
+  top: 6rem;
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  gap: 0.5rem;
+}
+
+.menu-btn li {
+  width: 45%;
+  height: 0.2rem;
+  background-color: black;
+  border-radius: 1rem;
+}
+.menu-btn:hover {
+  gap: 0.75rem;
+}
+
+/* .mew {
+  clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%);
+} */
