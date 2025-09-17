@@ -27,14 +27,17 @@
   transform: translate(-50%, -50%);
   text-transform: uppercase;
 }
+.header-section .hero-section .title {
+  backface-visibility: hidden;
+}
 .header-section .hero-section .primary-heading {
   font-size: 5.2rem;
   font-weight: 500;
   letter-spacing: 3rem;
   font-family: var(--main-font);
   display: block;
-  animation: primary-heading 0.7s ease forwards;
-  animation-delay: 0.7s;
+  animation: from-left 0.7s ease forwards;
+  animation-delay: 0.4s;
   opacity: 0;
 }
 .header-section .hero-section .primary-sub-heading {
@@ -43,11 +46,11 @@
   font-weight: 700;
   margin: 0rem 0 6.4rem 0;
   display: block;
-  animation: primary-sub-heading 0.7s ease forwards;
-  animation-delay: 0.7s;
+  animation: from-right 0.7s ease forwards;
+  animation-delay: 0.4s;
   opacity: 0;
 }
-@keyframes primary-heading {
+@keyframes from-left {
   0% {
     transform: translateX(-15rem);
     opacity: 0;
@@ -61,7 +64,7 @@
     opacity: 1;
   }
 }
-@keyframes primary-sub-heading {
+@keyframes from-right {
   0% {
     transform: translateX(15rem);
     opacity: 0;
@@ -74,76 +77,6 @@
     transform: translateX(0rem);
     opacity: 1;
   }
-}
-
-.main-btn:link,
-.main-btn:visited {
-  background-color: var(--text-color);
-  padding: 1.2rem 3.6rem;
-  border-radius: 10rem;
-  display: inline-block;
-  font-size: 1.4rem;
-  font-weight: 400;
-}
-.bag {
-  width: 6rem;
-  height: 6rem;
-  position: fixed;
-  right: 6rem;
-  top: 6rem;
-  z-index: 50;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.menu-bag {
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
-
-.menu-btn {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  z-index: 99;
-  border-radius: 50%;
-  background-color: white;
-  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  gap: 0.5rem;
-  transition: all 0.25s ease-in;
-}
-.menu-btn li {
-  width: 45%;
-  height: 0.2rem;
-  background-color: black;
-  border-radius: 1rem;
-}
-.menu-btn:hover {
-  gap: 0.7rem;
-}
-
-.green-back {
-  background-image: radial-gradient(#862e9ee2, #38d9a9);
-  position: absolute;
-  z-index: 80;
-  top: 50%;
-  left: 50%;
-  translate: -50% -50%;
-  width: 50%;
-  height: 50%;
-  border-radius: 100%;
-  transition: all 0.25s ease-in;
-}
-.open {
-  width: 250vw;
-  height: 250vw;
 }
 
 /* .mew {

@@ -1,0 +1,9 @@
+@media (max-width: 700px) {
+  body {
+    padding: 0;
+  }
+  .bag {
+    top: 2rem;
+    right: 3rem;
+  }
+}
