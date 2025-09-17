@@ -1,4 +1,4 @@
-.header-section {
+.header {
   height: 95vh;
   background-image: linear-gradient(140deg, #862e9ccc, #38d9a9cc),
     url(../media/img/hero.jpg);
@@ -11,26 +11,26 @@
   clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
 }
 
-.logo-section {
+.header__logo--section {
   position: absolute;
   top: 4rem;
   left: 4rem;
 }
-.logo-section .logo {
+.header__logo--section .logo {
   height: 3.5rem;
 }
 
-.header-section .hero-section {
+.header .header__hero--section {
   position: absolute;
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-transform: uppercase;
 }
-.header-section .hero-section .title {
+.header .header__hero--section .title {
   backface-visibility: hidden;
 }
-.header-section .hero-section .primary-heading {
+.header .header__hero--section .primary-heading {
   font-size: 5.2rem;
   font-weight: 500;
   letter-spacing: 3rem;
@@ -40,7 +40,7 @@
   animation-delay: 0.4s;
   opacity: 0;
 }
-.header-section .hero-section .primary-sub-heading {
+.header .header__hero--section .primary-sub-heading {
   font-size: 1.6rem;
   letter-spacing: 1.6rem;
   font-weight: 700;
