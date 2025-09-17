@@ -84,16 +84,7 @@ body {
 .btn-animation {
   animation: from-bottom 0.3s linear 1s backwards;
 }
-@keyframes from-bottom {
-  0% {
-    opacity: 0;
-    transform: translateY(8rem);
-  }
-  100% {
-    opacity: 1;
-    transform: translate(0);
-  }
-}
+
 .btn:hover {
   transform: translateY(-0.7rem);
   box-shadow: 0 1rem 2rem #00000033;
