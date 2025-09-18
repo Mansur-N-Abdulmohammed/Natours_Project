@@ -12,21 +12,40 @@
 
 
 
-
   <div class="panel">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, aliquid rerum neque fugiat voluptatem delectus quis
-    velit nulla non mollitia hic soluta, alias tempore nihil a consequatur. Aperiam, iste quam.
+    <ul class="list">
+      <li class="item">mew</li>
+      <li class="item">mew</li>
+      <li class="item">mew</li>
+    </ul>
   </div>
-
 
 </body>
 
 </html>
 <style>
   .panel {
-    background-color: antiquewhite;
-    width: 300px;
-    font-size: 16px;
-    line-height: 150%;
+    background-color: red;
+    --organ: rgb(26, 26, 183);
+
+    .list {
+      width: 50%;
+      background-color: aqua;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      .item {
+        background-color: rgb(255, 127, 255);
+
+        &.item:last-child {
+          background-color: yellow;
+        }
+
+        &:hover:nth-child(odd) {
+          background-color: rgb(255, 204, 0);
+        }
+      }
+    }
   }
 </style>
