@@ -4,10 +4,8 @@
     url(../media/img/hero.jpg);
   background-size: cover;
   background-position: top center;
-
   position: relative;
   color: var(--text-color);
-
   clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
 }
 

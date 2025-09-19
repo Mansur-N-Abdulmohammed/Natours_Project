@@ -6,6 +6,7 @@
   box-sizing: inherit;
   outline: none;
   list-style: none;
+  font-family: inherit;
 }
 
 * button,
@@ -23,26 +24,6 @@ html {
 ::selection {
   background-color: #fff;
   color: #862e9e;
-}
-
-:root {
-  /* BACKGROUND-COLOR */
-  --light-color: #7ed56f;
-  --mid-color: #55c57a;
-  --dark-color: #28b485;
-  /* THE TEXT COLORS */
-  --text-color: #fff;
-  --text-grey-color: #777;
-  /* THE FONT */
-  --main-font: "Lato", sans-serif;
-  /* THE FONT WEIGHTS */
-  --min-weight: 400;
-  --mid-weight: 600;
-  --max-weight: 800;
-  /* THE LINE HEIGHTS */
-  --min-line-height: 1.3;
-  --mid-line-height: 1.7;
-  --max-line-height: 2;
 }
 
 body {
