@@ -22,6 +22,7 @@
 }
 .header__logo--section .logo {
   height: 3.5rem;
+  animation: from-left 0.3s ease-in-out 1s backwards;
 }
 
 .header .header__hero--section {

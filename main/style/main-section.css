@@ -3,7 +3,7 @@
   grid-template-columns: repeat(2, 1fr);
   row-gap: 15rem;
   column-gap: 10rem;
-  .x2 {
+  .main-gradient-title {
     grid-column: span 2;
   }
 }
@@ -72,15 +72,13 @@
 
 .custom-image-field {
   position: relative;
-
   .image-item {
-    width: 28rem;
+    width: 60%;
     position: absolute;
-    padding: 2rem;
-    border-radius: 2rem;
     top: 50%;
     left: 50%;
     translate: -50% -50%;
+    box-shadow: 0 1rem 5rem 1rem rgba(0, 0, 0, 0.2);
   }
 
   .x1 {
@@ -97,7 +95,13 @@
   }
   .image-item:hover {
     z-index: 4;
-    transform: scale(1.1);
-    box-shadow: 0 0 0 1rem var(--secondary-color);
+    transform: scale(1.2) translateY(-3rem);
+    outline: 0.5rem solid var(--primary-color);
+    outline-offset: 1rem;
+    box-shadow: 0 1rem 5rem 1rem rgba(0, 0, 0, 0.2);
   }
+}
+
+.custom-image-field:hover .image-item:not(:hover) {
+  transform: scale(0.7);
 }

@@ -9,6 +9,7 @@
   align-items: center;
   justify-content: center;
   transition: all 0.25s;
+  animation: from-right 0.3s ease-in-out 1s backwards;
 }
 .menu-bag {
   width: 100%;

@@ -5,7 +5,7 @@
   --primary-color-half: #862e9ecc;
   --secondary-color-half: #38d9a9cc;
   --text-color: #fff;
-  --text-grey-color: #555;
+  --text-grey-color: #666;
   --main-font: "Lato", sans-serif;
 }
 
@@ -113,7 +113,7 @@ body {
   }
 }
 .shadow {
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1rem 5rem 1rem rgba(0, 0, 0, 0.2);
 }
 .trans {
   transition: all 0.3s ease-in-out;
