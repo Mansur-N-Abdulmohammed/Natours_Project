@@ -1,9 +1,10 @@
+@import url(./variable.css);
+
 @keyframes from-left {
   0% {
     transform: translateX(-15rem);
     opacity: 0;
   }
-
   80% {
     transform: translateX(1rem);
   }
@@ -12,6 +13,7 @@
     opacity: 1;
   }
 }
+
 @keyframes from-right {
   0% {
     transform: translateX(15rem);
@@ -35,5 +37,20 @@
   100% {
     opacity: 1;
     transform: translate(0);
+  }
+}
+
+@keyframes nav-respown {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  80% {
+    left: 55%;
+  }
+  100% {
+    opacity: 1;
+    left: 50%;
+    visibility: visible;
   }
 }

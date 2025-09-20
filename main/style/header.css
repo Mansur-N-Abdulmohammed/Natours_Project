@@ -1,6 +1,12 @@
+@import url(./variable.css);
+
 .header {
   height: 95vh;
-  background-image: linear-gradient(140deg, #862e9ccc, #38d9a9cc),
+  background-image: linear-gradient(
+      140deg,
+      var(--primary-color-half),
+      var(--secondary-color-half)
+    ),
     url(../media/img/hero.jpg);
   background-size: cover;
   background-position: top center;
@@ -33,6 +39,7 @@
   font-weight: 500;
   letter-spacing: 3rem;
   font-family: var(--main-font);
+  color: white;
   display: block;
   animation: from-left 0.7s ease forwards;
   animation-delay: 0.4s;
@@ -42,7 +49,7 @@
   font-size: 1.6rem;
   letter-spacing: 1.6rem;
   font-weight: 700;
-  margin: 0rem 0 6.4rem 0;
+  margin: 1rem 0 6.4rem 0;
   display: block;
   animation: from-right 0.7s ease forwards;
   animation-delay: 0.4s;

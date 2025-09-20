@@ -7,7 +7,13 @@
   <title>Natours | Exciting tour for adventures people </title>
 
   <!-- -------------------CSS LINKS-------------------- -->
-  <link rel="stylesheet" href="../style/main.css">
+  <link rel="stylesheet" href="../style/animations.css">
+  <link rel="stylesheet" href="../style/general.css">
+  <link rel="stylesheet" href="../style/header.css">
+  <link rel="stylesheet" href="../style/navbar.css">
+  <link rel="stylesheet" href="../style/main-section.css">
+  <link rel="stylesheet" href="../style/queries.css">
+
 
   <!-- -------------------GOOGLE FONTS----------------- -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -75,16 +81,35 @@
     <li class="menu-item"><a href="#" class="menu-item-btn"><span>05</span> book now</a></li>
   </ul>
 
+  <main class="main-section container">
+    <h1 class="main-gradient-title x2">Exciting tours for adventurous people</h1>
+    <div class="primary-test-field">
+      <aside class="row">
+        <h2 class="secondary-gray-heading">you're going to fall in love with nature </h2>
+        <p class="paragraph-gray">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente
+          aspernatur libero repellat quis consequatur ducimus quam nisi exercitationem omnis earum qui.</p>
+      </aside>
+      <aside class="row">
+        <h2 class="secondary-gray-heading">Live adventures like you never have before</h2>
+        <p class="paragraph-gray">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores nulla deserunt
+          voluptatum nam. </p>
+      </aside>
 
-
-  <div class="mew">
-    <p class="par">
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, labore! Explicabo ducimus distinctio ullam
-      temporibus omnis in sequi repellendus, aliquid aspernatur, maxime ex officia sint sed? Eaque sed consectetur in.
-    </p>
-  </div>
+      <a href="#" class="anchor-btn shadow-btn trans">Learn more
+        <ion-icon name="caret-forward-outline" class="anchor-icon"></ion-icon>
+      </a>
+    </div>
+    <div class="custom-image-field">
+      <img class="image-item x1 trans" src="../media/img/nat-1.jpg" alt="">
+      <img class="image-item x2 trans" src="../media/img/nat-2.jpg" alt="">
+      <img class="image-item x3 trans" src="../media/img/nat-3.jpg" alt="">
+    </div>
+  </main>
 
   <!-- 
+
+
+
     git add .
   git commit -m"  hello  "
   git push origin main
@@ -93,20 +118,8 @@
   BEM = block element modifier 
   -->
 
-
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
-<style>
-  .mew {
-    background-color: pink;
-
-    &:hover {
-      background-color: aquamarine;
-    }
-
-    .par {
-      color: orange;
-    }
-  }
-</style>

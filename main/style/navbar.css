@@ -44,7 +44,10 @@
 }
 
 .green-back {
-  background-image: radial-gradient(#862e9e, #38d9a9);
+  background-image: radial-gradient(
+    var(--primary-color),
+    var(--secondary-color)
+  );
   position: absolute;
   z-index: 80;
   top: 50%;
@@ -75,20 +78,6 @@
 }
 .menu-list-open {
   animation: nav-respown 0.6s ease-in-out forwards;
-}
-@keyframes nav-respown {
-  0% {
-    opacity: 0;
-    visibility: hidden;
-  }
-  80% {
-    left: 55%;
-  }
-  100% {
-    opacity: 1;
-    left: 50%;
-    visibility: visible;
-  }
 }
 
 .menu-list {
