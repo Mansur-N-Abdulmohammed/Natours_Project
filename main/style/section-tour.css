@@ -1,0 +1,112 @@
+.section-tour {
+  display: grid;
+  max-width: 110rem;
+  margin: 10rem auto;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto 1fr auto;
+  column-gap: 5rem;
+  row-gap: 9.6rem;
+  .main-gradient-title {
+    grid-column: 1/-1;
+  }
+}
+
+.image-header {
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  overflow: hidden;
+  width: 100%;
+  padding-bottom: 65%;
+  background-position: center center;
+  background-size: cover;
+  filter: brightness(1.25);
+}
+
+.price-card-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+
+  padding: 2rem 0;
+  margin-top: -3rem;
+  li {
+    font-size: 1.4rem;
+    padding: 1.6rem 0;
+    width: 70%;
+    text-align: center;
+  }
+  li:not(:last-child) {
+    border-bottom: 0.1rem solid rgba(0, 0, 0, 0.08);
+  }
+}
+
+.price-card {
+  perspective: 50rem;
+  -moz-perspective: 50rem;
+  position: relative;
+  height: 50rem;
+
+  &:hover {
+    .front-card-side {
+      transform: rotateY(-180deg);
+    }
+    .back-card-side {
+      transform: rotateY(0deg);
+    }
+  }
+}
+
+.side {
+  backface-visibility: hidden;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 1.6rem 3rem 1rem rgba(0, 0, 0, 0.15);
+  border-radius: 1rem;
+  transition: transform 0.6s ease;
+}
+.front-card-side {
+  z-index: 3;
+
+  .IH1 {
+    background-image: url(../media/img/nat-5.jpg);
+  }
+  .IH2 {
+    background-image: url(../media/img/nat-6.jpg);
+  }
+  .IH3 {
+    background-image: url(../media/img/nat-7.jpg);
+  }
+}
+
+.back-card-side {
+  z-index: 4;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+  .tit {
+    font-weight: 900;
+    font-size: 2rem;
+  }
+  .price {
+    font-size: 6.2rem;
+    font-weight: 200;
+    margin: 2rem 0 5rem 0;
+  }
+}
+.side-1 {
+  background-image: linear-gradient(140deg, #ffb900, #ff7730);
+}
+.side-2 {
+  background-image: linear-gradient(to right bottom, #7ed56f, #28b485);
+}
+.side-3 {
+  background-image: linear-gradient(to right bottom, #2998ff, #5643fa);
+}

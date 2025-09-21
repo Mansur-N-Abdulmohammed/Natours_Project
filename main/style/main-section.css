@@ -1,4 +1,5 @@
 .main-section {
+  margin-top: -2rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   row-gap: 15rem;
@@ -15,6 +16,7 @@
     var(--primary-color),
     var(--secondary-color)
   );
+
   -webkit-background-clip: text;
   color: transparent;
   font-size: 3rem;
@@ -73,7 +75,7 @@
 .custom-image-field {
   position: relative;
   .image-item {
-    width: 60%;
+    width: 55%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -95,7 +97,7 @@
   }
   .image-item:hover {
     z-index: 4;
-    transform: scale(1.2) translateY(-3rem);
+    transform: scale(1.1) translateY(-3rem);
     outline: 0.5rem solid var(--primary-color);
     outline-offset: 1rem;
     box-shadow: 0 1rem 5rem 1rem rgba(0, 0, 0, 0.2);

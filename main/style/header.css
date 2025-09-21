@@ -1,5 +1,3 @@
-@import url(./variable.css);
-
 .header {
   height: 95vh;
   background-image: linear-gradient(
@@ -7,9 +5,9 @@
       var(--primary-color-half),
       var(--secondary-color-half)
     ),
-    url(../media/img/hero.jpg);
+    url(../media/img/jia-ge-z6RZTM4L5hU-unsplash.jpg);
   background-size: cover;
-  background-position: top center;
+  background-position: bottom center;
   position: relative;
   color: var(--text-color);
   clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);

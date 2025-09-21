@@ -45,10 +45,7 @@
 }
 
 .green-back {
-  background-image: radial-gradient(
-    var(--primary-color),
-    var(--secondary-color)
-  );
+  background-image: radial-gradient(var(--primary-color), blue);
   position: absolute;
   z-index: 80;
   top: 50%;
