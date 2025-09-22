@@ -1,6 +1,7 @@
 .section-tour {
+  padding: 5rem 0;
   display: grid;
-  max-width: 110rem;
+  max-width: 115rem;
   margin: 10rem auto;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto 1fr auto;
@@ -12,13 +13,44 @@
 }
 
 .image-header {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
   overflow: hidden;
   width: 100%;
   padding-bottom: 65%;
   background-position: center center;
   background-size: cover;
-  filter: brightness(1.25);
+  background-blend-mode: screen;
+}
+.head-line-title {
+  position: absolute;
+  top: 0;
+  left: 5%;
+  translate: 0% -70%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+
+  .head-line-title-first,
+  .head-line-title-second {
+    display: block;
+    text-transform: uppercase;
+    color: white;
+    font-size: 2vw;
+    padding: 1rem 1.6rem;
+    margin-top: -0.8rem;
+  }
+  .hltf-1 {
+    background-image: linear-gradient(140deg, #ffb900, #ff7730);
+  }
+  .hltf-2 {
+    background-image: linear-gradient(140deg, #7ed56f, #28b485);
+  }
+  .hltf-3 {
+    background-image: linear-gradient(140deg, #2998ff, #5643fa);
+  }
 }
 
 .price-card-list {
@@ -26,17 +58,17 @@
   flex-direction: column;
   align-items: center;
   justify-content: start;
-
-  padding: 2rem 0;
-  margin-top: -3rem;
+  position: relative;
   li {
     font-size: 1.4rem;
     padding: 1.6rem 0;
     width: 70%;
     text-align: center;
-  }
-  li:not(:last-child) {
     border-bottom: 0.1rem solid rgba(0, 0, 0, 0.08);
+  }
+  li:last-child,
+  li:first-child {
+    border: none;
   }
 }
 
@@ -44,7 +76,7 @@
   perspective: 50rem;
   -moz-perspective: 50rem;
   position: relative;
-  height: 50rem;
+  padding-bottom: 54rem;
 
   &:hover {
     .front-card-side {
@@ -72,13 +104,16 @@
   z-index: 3;
 
   .IH1 {
-    background-image: url(../media/img/nat-5.jpg);
+    background-image: linear-gradient(to right bottom, #ffb900, #ff7730),
+      url(../media/img/nat-5.jpg);
   }
   .IH2 {
-    background-image: url(../media/img/nat-6.jpg);
+    background-image: linear-gradient(140deg, #7ed56f, #28b485),
+      url(../media/img/nat-6.jpg);
   }
   .IH3 {
-    background-image: url(../media/img/nat-7.jpg);
+    background-image: linear-gradient(140deg, #2998ff, #5643fa),
+      url(../media/img/nat-7.jpg);
   }
 }
 
@@ -105,8 +140,13 @@
   background-image: linear-gradient(140deg, #ffb900, #ff7730);
 }
 .side-2 {
-  background-image: linear-gradient(to right bottom, #7ed56f, #28b485);
+  background-image: linear-gradient(140deg, #7ed56f, #28b485);
 }
 .side-3 {
-  background-image: linear-gradient(to right bottom, #2998ff, #5643fa);
+  background-image: linear-gradient(140deg, #2998ff, #5643fa);
+}
+
+.btn-box {
+  grid-column: 2/3;
+  text-align: center;
 }

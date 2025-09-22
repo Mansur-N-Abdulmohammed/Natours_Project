@@ -1,6 +1,7 @@
 .section-fetured {
   height: 100vh;
   margin: -1rem 0 0 0;
+  -webkit-clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
   clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
   background-image: linear-gradient(
       140deg,
@@ -26,15 +27,11 @@
   padding: 0 5rem;
 }
 .card {
-  /* background-image: linear-gradient(
-    -40deg,
-    var(--primary-color-half),
-    var(--secondary-color-half)
-  ); */
   background-color: rgb(255, 255, 255);
   text-align: center;
   padding: 2rem 1.6rem 4rem 1.6rem;
   border-radius: 0.7rem;
+  cursor: pointer;
   &:hover {
     transform: translateY(-3rem) scale(1.1);
   }

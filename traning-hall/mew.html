@@ -11,65 +11,11 @@
 <body>
 
 
-  <div class="container">
-
-    <div class="card-front">
-      front
-    </div>
-    <div class="card-back">
-      front
-    </div>
-  </div>
 
 
 </body>
 
 </html>
 <style>
-  .card-front {
-    height: 50rem;
-    width: 40rem;
-    background-image: linear-gradient(140deg, aqua, blue);
-    /* position: absolute;
-    z-index: 1;
-    backface-visibility: hidden; */
-    border-radius: 2rem;
-  }
 
-  .card-back {
-    height: 50rem;
-    width: 40rem;
-    background-image: linear-gradient(140deg, rgb(187, 255, 0), rgb(255, 234, 0));
-    transform: rotateY(180deg);
-    /* position: absolute;
-    z-index: 0;
-    backface-visibility: hidden; */
-    border-radius: 2rem;
-  }
-
-  .container {
-    perspective: 70rem;
-    height: 50rem;
-    width: 40rem;
-    margin: 20rem auto;
-    color: white;
-    font-size: 3rem;
-    font-family: sans-serif;
-    text-transform: uppercase;
-    position: relative;
-
-    &>* {
-      transition: transform .5s ease-in;
-    }
-  }
-
-  .container:hover {
-    .card-front {
-      transform: rotateY(-180deg);
-    }
-
-    .card-back {
-      transform: rotateY(0deg);
-    }
-  }
 </style>

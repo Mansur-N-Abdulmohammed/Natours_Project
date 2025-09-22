@@ -45,7 +45,10 @@
 }
 
 .green-back {
-  background-image: radial-gradient(var(--primary-color), blue);
+  background-image: radial-gradient(
+    var(--secondary-color),
+    var(--primary-color)
+  );
   position: absolute;
   z-index: 80;
   top: 50%;
@@ -54,12 +57,11 @@
   width: 50%;
   height: 50%;
   border-radius: 100%;
-  transition: all 0.25s ease-in;
+  transition: all 0.6s ease 0.2s;
 }
 .open {
-  width: 270vw;
-  height: 330vh;
-  filter: blur(10rem);
+  width: 500rem;
+  height: 500rem;
 }
 
 .menu-list {

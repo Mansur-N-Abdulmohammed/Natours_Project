@@ -9,3 +9,10 @@
     right: 3rem;
   }
 }
+
+@media (min-width: 1250px) {
+  .head-line-title-first,
+  .head-line-title-second {
+    font-size: 2.4rem !important;
+  }
+}
