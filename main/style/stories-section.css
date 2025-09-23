@@ -1,0 +1,97 @@
+.stories-section {
+  margin: 5rem auto;
+  padding: 5rem 0;
+  height: 100vh;
+  position: relative;
+  background-color: grey;
+
+  .u-center-part {
+    position: absolute;
+    width: 100%;
+    top: 20%;
+    left: 0%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 0 3rem;
+    .first-path {
+      clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
+      .image-part::after {
+        content: "welson \A adler";
+      }
+      .image-part {
+        img {
+          height: 100%;
+          transition: all 1s ease;
+        }
+      }
+    }
+    .second-path {
+      clip-path: polygon(0 0, 90% 0, 100% 100%, 10% 100%);
+      .image-part::after {
+        content: "jack \A morgan";
+      }
+      .image-part {
+        img {
+          width: 100%;
+          transition: all 1s ease;
+        }
+      }
+    }
+    .storie {
+      max-width: 90rem;
+      margin: 0 auto;
+      background-color: #ffffffcc;
+      padding: 5rem 10rem;
+      cursor: pointer;
+
+      .image-part {
+        width: 15rem;
+        height: 15rem;
+        -webkit-shape-outside: circle(50% at 50% 50%);
+        shape-outside: circle(50% at 50% 50%);
+        -webkit-clip-path: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%);
+        float: left;
+        margin-right: 2.6rem;
+        /* background-size: 170% 120%;
+        background-position: center center;*/
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &::after {
+          white-space: pre;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          translate: -50% -50%;
+          font-size: 2rem;
+          font-weight: 700;
+          color: white;
+          text-transform: capitalize;
+          text-align: center;
+          transition: all 0.4s ease;
+          overflow: hidden;
+          transform: translateY(200%);
+        }
+      }
+      &:hover {
+        .image-part::after {
+          transform: translateY(0%);
+        }
+        .image-part img {
+          filter: blur(0.2rem);
+          transform: scale(1.4);
+        }
+      }
+      .testimonials-speech {
+        p {
+          line-height: 1.5;
+        }
+      }
+    }
+  }
+}

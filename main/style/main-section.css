@@ -33,10 +33,12 @@
 }
 
 .secondary-gray-heading {
-  margin-bottom: 1.4rem;
-  font-size: 1.8rem;
-  font-weight: 700;
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  font-weight: 800;
   text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  line-height: 2;
 }
 .paragraph-gray {
   line-height: 150%;
@@ -81,6 +83,7 @@
     left: 50%;
     translate: -50% -50%;
     box-shadow: 0 1rem 5rem 1rem rgba(0, 0, 0, 0.2);
+    cursor: pointer;
   }
 
   .x1 {
@@ -98,8 +101,8 @@
   .image-item:hover {
     z-index: 4;
     transform: scale(1.1) translateY(-3rem);
-    outline: 0.5rem solid var(--primary-color);
-    outline-offset: 1rem;
+    outline: 1rem solid var(--secondary-color);
+    outline-offset: 2rem;
     box-shadow: 0 1rem 5rem 1rem rgba(0, 0, 0, 0.2);
   }
 }
