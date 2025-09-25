@@ -43,6 +43,7 @@
 .paragraph-gray {
   line-height: 150%;
 }
+.anchor-btn,
 .anchor-btn:link,
 .anchor-btn:visited {
   /* color: var(--primary-color); */

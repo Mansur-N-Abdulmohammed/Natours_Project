@@ -1,0 +1,58 @@
+.book-section {
+  background-image: linear-gradient(
+    -40deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  padding: 20rem 0;
+
+  .book-section_bg {
+    margin: 0 auto;
+    background-color: transparent;
+    max-width: 130rem;
+    background-image: url(../media/img/jia-ge-z6RZTM4L5hU-unsplash.jpg);
+    background-size: cover;
+    background-position: center center;
+    .book {
+      width: 70%;
+      height: 100%;
+      background-color: #ffffffcc;
+      clip-path: polygon(0 0, 100% 0, 80% 100%, 0 100%);
+      padding: 8rem 15rem 8rem 5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+    }
+    .x34 {
+      text-align: start;
+      align-self: flex-start;
+    }
+    .the-book-form {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      align-items: start;
+
+      .input-one {
+        width: 70%;
+        border: none;
+        font-size: 1.6rem;
+        padding: 1.6rem;
+        display: block;
+        outline: none;
+        transition: all 0.4s ease;
+        border-bottom: 0.4rem transparent solid;
+      }
+      .input-one::placeholder {
+        font-weight: 600;
+        color: rgba(128, 128, 128, 0.705);
+      }
+      .input-one:focus {
+        border-bottom: 0.4rem rgb(255, 132, 0) solid;
+      }
+      .radio-btn {
+        padding: 5rem;
+      }
+    }
+  }
+}
