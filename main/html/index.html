@@ -225,7 +225,7 @@
   <section class="stories-section" id="stories-section-id">
 
     <video class="bg-video" muted autoplay loop>
-      <source src="../media/video/19912385-uhd_3840_2160_24fps.mp4" type="video/mp4" class="bg-video-content">
+      <source src="../media/video/5977202-uhd_3840_2160_25fps.mp4" type="video/mp4" class="bg-video-content">
     </video>
 
     <h1 class="main-gradient-title x12">We make people genuinely happy</h1>
@@ -269,17 +269,42 @@
   </section>
 
   <section class="book-section" id="booking-section34">
+
+    <video class="bg-video" muted autoplay loop>
+      <source src="../media/video/5977191-uhd_3840_2160_25fps.mp4" type="video/mp4" class="bg-video-content">
+    </video>
+
     <div class="book-section_bg">
       <div class="book">
         <h1 class="main-gradient-title x34">start booking now</h1>
         <form action="#" class="the-book-form">
-          <label for="F_name12"></label>
-          <input type="text" name="Full_Name" id="F_name12" class="input-one" placeholder="Full name" required>
-          <label for="Email_12"></label>
-          <input type="email" name="Email" id="Email_12" class="input-one" placeholder="Email address" required>
-          <div class="radio-btn">
+          <div class="naming">
+            <input type="text" name="Full_Name" id="F_name12" class="input-one" placeholder="Full name" required
+              autocomplete="off">
+            <label for="F_name12" class="label-one">Full name</label>
           </div>
-          <button type="submit" class="btn btn-custom ">next step
+          <div class="addresing">
+            <input type="email" name="Email" id="Email_12" class="input-one" placeholder="Email address" required
+              autocomplete="off">
+            <label for="Email_12" class="label-one">Email address</label>
+          </div>
+
+          <div class="radios">
+            <div class="peace">
+              <input type="radio" name="radio-option" id="fisrt-radio-btn" class="hidden-btn" value="small_tour_group">
+              <label for="fisrt-radio-btn">
+                <span class="custom-radio-btn"></span>
+                Small tour group </label>
+            </div>
+            <div class="peace">
+              <input type="radio" name="radio-option" id="second-radio-btn" class="hidden-btn" value="Large_tour_group">
+              <label for="second-radio-btn">
+                <span class="custom-radio-btn"></span>
+                Large tour group </label>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-custom">next step
             <ion-icon name="caret-forward-outline" class="anchor-icon"></ion-icon>
           </button>
         </form>
