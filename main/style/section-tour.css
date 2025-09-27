@@ -7,6 +7,7 @@
   grid-template-rows: auto 1fr auto;
   column-gap: 5rem;
   row-gap: 9.6rem;
+  position: relative;
   .main-gradient-title {
     grid-column: 1/-1;
   }
@@ -104,7 +105,7 @@
   z-index: 3;
 
   .IH1 {
-    background-image: linear-gradient(to right bottom, #ffb900, #ff7730),
+    background-image: linear-gradient(140deg, #ffb900, #ff7730),
       url(../media/img/nat-5.jpg);
   }
   .IH2 {
@@ -149,4 +150,77 @@
 .btn-box {
   grid-column: 2/3;
   text-align: center;
+}
+
+ocb-3 {
+  background-image: url(../media/img/pexels-jordicosta-31293420.jpg);
+}
+.great-card {
+  background-color: #ffffff;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  width: 80vw;
+  z-index: 200;
+  display: grid;
+  grid-template-columns: 5fr 6fr;
+  grid-template-rows: 1fr;
+  border-radius: 2rem;
+  overflow: hidden;
+  box-shadow: 0 0 0rem 200rem rgba(0, 0, 0, 0.627);
+
+  .image-side {
+    clip-path: polygon(0 0, 100% 0, 90% 25%, 100% 75%, 90% 100%, 0 100%);
+    background-size: cover;
+  }
+  .intro-side {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 4rem;
+    padding: 3rem;
+    .x76 {
+      font-size: 3.6rem;
+      display: block;
+      text-align: start;
+      margin-bottom: 1.4rem;
+    }
+    .x77 {
+      font-size: 2rem;
+      display: block;
+    }
+    .belt {
+      display: flex;
+      gap: 4rem;
+
+      & > *:not(:last-child) {
+        border-right: 0.1rem solid rgba(0, 0, 0, 0.247);
+        padding-right: 2rem;
+      }
+    }
+  }
+}
+
+.hide {
+  display: none;
+}
+
+.ocb-3 {
+  .image-side {
+    background-image: url(../media/img/pexels-jordicosta-31293420.jpg);
+    background-position: center;
+  }
+}
+.ocb-2 {
+  .image-side {
+    background-image: url(../media/img/pexels-airamdphoto-2123858739.jpg);
+    background-position: right;
+  }
+}
+.ocb-1 {
+  .image-side {
+    background-image: url(../media/img/pexels-lu-li-63700378-16526470.jpg);
+    background-position: bottom;
+  }
 }

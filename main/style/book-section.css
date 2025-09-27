@@ -85,7 +85,7 @@
       .input-one:focus:invalid {
         box-shadow: 0rem 0.4rem 0 #ff6600;
       }
-      .input-one:focus:valid {
+      .input-one:valid {
         box-shadow: 0rem 0.4rem 0 #00ffbb;
       }
       .input-one:placeholder-shown + .label-one {

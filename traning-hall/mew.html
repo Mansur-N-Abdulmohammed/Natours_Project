@@ -11,12 +11,32 @@
 <body>
 
 
+  <div class="grada">
 
+  </div>
 
 
 </body>
 
 </html>
 <style>
+  body {
+    background-color: #333;
+  }
 
+  .grada {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    width: 70rem;
+    height: 30rem;
+    background: linear-gradient(140deg, transparent 50%, #ffffff 50%);
+    transition: all .2s linear;
+    background-size: 300%;
+  }
+
+  .grada:hover {
+    background-position: 100%;
+  }
 </style>
