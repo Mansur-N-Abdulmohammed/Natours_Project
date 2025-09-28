@@ -1,8 +1,9 @@
 .section-fetured {
-  height: 100vh;
-  margin: -1rem 0 0 0;
-  -webkit-clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
-  clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
+  /* height: 100vh; */
+  margin: 8rem 0;
+  padding: 30rem 0;
+  /* -webkit-clip-path: polygon(0 35%, 100% 0, 100% 85%, 0 100%); */
+  /* clip-path: polygon(0 10vh 100% 0, 100% 85%, 0 100%); */
   background-image: linear-gradient(
       140deg,
       var(--primary-color-half),
@@ -11,26 +12,30 @@
     url(../media/img/pietro-de-grandi-T7K4aEPoGGk-unsplash.jpg);
   background-position: top center;
   background-size: cover;
-
+  transform: skewY(-7deg);
   display: flex;
   align-items: center;
   justify-content: center;
+  & > * {
+    transform: skewY(7deg);
+  }
 }
 
 .content-section {
-  max-width: 130rem;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 1fr;
-  justify-items: center;
-  gap: 5rem;
-  padding: 0 5rem;
+  max-width: 120rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 0 2rem;
 }
 .card {
-  background-color: #333;
+  flex: 1 0 25rem;
+  background-color: #444;
   text-align: center;
   padding: 2rem 1.6rem 4rem 1.6rem;
-  border-radius: 0.7rem;
+  border-radius: 2rem;
   cursor: pointer;
   &:hover {
     transform: translateY(-3rem) scale(1.1);

@@ -1,130 +1,133 @@
-.bag {
-  width: 6rem;
-  height: 6rem;
-  position: fixed;
-  right: 6rem;
-  top: 6rem;
-  z-index: 50;
+/* animation: from-right 0.3s ease-in-out 1s backwards; */
+
+.the-check {
+  display: none;
+  pointer-events: none;
+}
+
+.nav-btn {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.25s;
+  position: fixed;
+  z-index: 90;
+  top: 5rem;
+  right: 5rem;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-color: #fff;
+  cursor: pointer;
   animation: from-right 0.3s ease-in-out 1s backwards;
 }
-.menu-bag {
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
-
-.menu-btn {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  z-index: 99;
+.circle-spawn {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-image: radial-gradient(var(--secondary-color), #9500ff);
+  position: fixed;
+  top: 5rem;
+  right: 5rem;
+  translate: -50% 50%;
+  z-index: 50;
   border-radius: 50%;
-  background-color: white;
-  box-shadow: 0 1rem 3rem #00000033;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  gap: 0.5rem;
-  transition: all 0.25s ease-in-out;
+  animation: from-right 0.3s ease-in-out 1s backwards;
+  transition: transform 0.6s cubic-bezier(1, 0, 0.32, 1.32);
 }
-.menu-btn li {
-  width: 45%;
+
+.nav-btn .line {
+  display: inline-block;
+  position: relative;
+  width: 50%;
   height: 0.2rem;
   background-color: black;
   border-radius: 1rem;
+  transition: all 0.1s linear;
+
+  &::after,
+  &::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    border-radius: 1rem;
+    position: absolute;
+    transition: transform 0.3s cubic-bezier(0, 0.55, 0.45, 1);
+  }
+
+  &::after {
+    top: 0.6rem;
+  }
+  &::before {
+    top: -0.6rem;
+  }
 }
-.menu-btn:hover {
-  gap: 0.7rem;
+.nav-btn:hover .line {
+  &::after {
+    top: 0.7rem;
+  }
+  &::before {
+    top: -0.7rem;
+  }
 }
 
-.green-back {
-  background-image: radial-gradient(
-    var(--primary-color) 10%,
-    var(--secondary-color) 60%
-  );
-  position: absolute;
-  z-index: 80;
-  top: 50%;
-  left: 50%;
-  translate: -50% -50%;
-  width: 50%;
-  height: 50%;
-  border-radius: 100%;
-  transition: all 0.2s ease;
+.the-check:checked ~ .circle-spawn {
+  transform: scale(140);
 }
-.open {
-  width: 500rem;
-  height: 500rem;
-  transition: all 0.6s ease 0.2s;
+.the-check:checked ~ .nav-btn {
+  .line {
+    background-color: transparent;
+    &::after {
+      top: 0;
+      transform: rotate(135deg);
+    }
+    &::before {
+      top: 0;
+      transform: rotate(-135deg);
+    }
+  }
 }
 
 .menu-list {
   position: fixed;
+  z-index: 1000;
   top: 50%;
-  left: -20%;
-  z-index: 100;
+  opacity: 0;
+  left: -30%;
   translate: -50% -50%;
+  text-align: center;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-  align-items: stretch;
-  visibility: hidden;
-  text-shadow: 0;
-}
-.menu-list-open {
-  animation: nav-respown 0.6s ease-in-out forwards;
-}
+  gap: 0.5rem;
+  transition: all 0.6s cubic-bezier(1, 0, 0.32, 1.32);
 
-.menu-list {
-  text-align: center;
-}
-.menu-item {
-  position: relative;
-  overflow: hidden;
+  .menu-item {
+    padding: 1.8rem;
+    transition: all 0.6s ease;
+    background-image: linear-gradient(120deg, transparent 50%, white 50%);
+    background-size: 300%;
 
-  transition: all 0.4s ease-in-out;
-  &::after {
-    content: "";
-    position: absolute;
-    right: 0%;
-    top: 0;
-    height: 100%;
-    width: 0%;
-    clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
-    z-index: -1;
-    transition: all 0.4s ease-in-out;
-    background-color: #ffffff;
-  }
-  &:hover::after {
-    width: 130%;
-  }
-  &:hover {
-    transform: translateX(-2rem);
+    &:hover {
+      transform: translateX(1.6rem);
+      background-position: 100%;
+      .menu-item-btn {
+        color: rgb(0, 149, 255);
+      }
+    }
+
     .menu-item-btn {
-      color: var(--primary-color);
+      transition: all 0.6s ease;
+      color: white;
+      font-size: 2rem;
+      font-weight: 300;
+      text-transform: uppercase;
+      span {
+        margin-right: 1rem;
+      }
     }
   }
 }
-.menu-item-btn {
-  display: inline-block;
-  transition: all 0.3s ease-in-out;
-  padding: 1.8rem 2rem;
-}
 
-.menu-item-btn {
-  display: inline-block;
-  color: white;
-  font-size: 2.4rem;
-  text-transform: uppercase;
-  font-weight: 300;
-}
-.menu-item-btn span {
-  margin-right: 1rem;
+.the-check:checked ~ .menu-list {
+  left: 50%;
+  opacity: 1;
 }
