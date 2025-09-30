@@ -1,9 +1,9 @@
 .section-fetured {
-  /* height: 100vh; */
   margin: 8rem 0;
   padding: 30rem 0;
+  height: 120vh;
   /* -webkit-clip-path: polygon(0 35%, 100% 0, 100% 85%, 0 100%); */
-  /* clip-path: polygon(0 10vh 100% 0, 100% 85%, 0 100%); */
+  clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
   background-image: linear-gradient(
       140deg,
       var(--primary-color-half),
@@ -12,13 +12,9 @@
     url(../media/img/pietro-de-grandi-T7K4aEPoGGk-unsplash.jpg);
   background-position: top center;
   background-size: cover;
-  transform: skewY(-7deg);
   display: flex;
   align-items: center;
   justify-content: center;
-  & > * {
-    transform: skewY(7deg);
-  }
 }
 
 .content-section {
