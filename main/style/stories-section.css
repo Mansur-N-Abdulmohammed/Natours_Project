@@ -119,9 +119,12 @@
         }
       }
       .testimonials-speech {
+        h1 {
+          font-size: 2rem;
+        }
         p {
           line-height: 1.7;
-          letter-spacing: 0.05rem;
+          letter-spacing: 0rem;
         }
       }
     }

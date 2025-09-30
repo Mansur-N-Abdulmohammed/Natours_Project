@@ -160,8 +160,8 @@ ocb-3 {
 /* --ACCESABILITY FOR TOUR SECTION-- */
 /* --------------------------------- */
 .great-card {
-  /* transition: all 0.5s ease; */
-  background-color: #ffffff;
+  transition: all 0.5s ease;
+  background-color: #fff;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -174,7 +174,7 @@ ocb-3 {
   border-radius: 2rem;
   overflow: hidden;
   box-shadow: 0 0 0rem 200rem rgba(0, 0, 0, 0.627);
-  animation: nav-respown 0.7s ease-in-out 0.4s both;
+
   .image-side {
     clip-path: polygon(0 0, 100% 0, 90% 25%, 100% 75%, 90% 100%, 0 100%);
     background-size: cover;
@@ -183,46 +183,95 @@ ocb-3 {
     display: flex;
     flex-direction: column;
     align-items: start;
-    gap: 4rem;
+    position: relative;
+    gap: 5rem;
     padding: 3rem;
     .x76 {
-      font-size: 3.6rem;
+      font-size: 3rem;
       display: block;
       text-align: start;
       margin-bottom: 1.4rem;
     }
     .x77 {
-      font-size: 2rem;
+      font-size: 1.6rem;
       display: block;
+      line-height: 2;
     }
     .belt {
+      font-size: 1.4rem;
+      line-height: 1.5;
       display: flex;
+
+      -moz-hyphens: auto;
+      -ms-hyphens: auto;
+      -webkit-hyphens: auto;
+      hyphens: auto;
+
       gap: 4rem;
       & > *:not(:last-child) {
         border-right: 0.1rem solid rgba(0, 0, 0, 0.1);
         padding-right: 3rem;
       }
     }
+    .back-btn {
+      transition: all 0.3s linear;
+      position: absolute;
+      top: 3rem;
+      right: 3rem;
+      background-color: #ffffff;
+      width: 5rem;
+      height: 5rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &:hover {
+        background-color: #dedede;
+      }
+      ion-icon {
+        width: 70%;
+        height: 70%;
+        color: black;
+      }
+    }
   }
 }
 
-.hide {
-  display: none;
-}
-
 .ocb-3 {
+  opacity: 0;
+  visibility: hidden;
+
+  &:target {
+    visibility: visible;
+    opacity: 1;
+  }
   .image-side {
     background-image: url(../media/img/pexels-jordicosta-31293420.jpg);
     background-position: center;
   }
 }
 .ocb-2 {
+  opacity: 0;
+  visibility: hidden;
+
+  &:target {
+    visibility: visible;
+    opacity: 1;
+  }
+
   .image-side {
     background-image: url(../media/img/pexels-airamdphoto-2123858739.jpg);
     background-position: right;
   }
 }
 .ocb-1 {
+  opacity: 0;
+  visibility: hidden;
+
+  &:target {
+    visibility: visible;
+    opacity: 1;
+  }
   .image-side {
     background-image: url(../media/img/pexels-lu-li-63700378-16526470.jpg);
     background-position: bottom;

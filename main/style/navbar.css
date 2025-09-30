@@ -13,11 +13,12 @@
   z-index: 90;
   top: 5rem;
   right: 5rem;
-  width: 5rem;
-  height: 5rem;
+  width: 6rem;
+  height: 6rem;
   border-radius: 50%;
   background-color: #fff;
   cursor: pointer;
+
   animation: from-right 0.3s ease-in-out 1s backwards;
 }
 .circle-spawn {
@@ -25,8 +26,8 @@
   height: 2.5rem;
   background-image: radial-gradient(var(--secondary-color), #9500ff);
   position: fixed;
-  top: 5rem;
-  right: 5rem;
+  top: 5.5rem;
+  right: 5.5rem;
   translate: -50% 50%;
   z-index: 50;
   border-radius: 50%;
@@ -51,7 +52,7 @@
     background-color: black;
     border-radius: 1rem;
     position: absolute;
-    transition: transform 0.3s cubic-bezier(0, 0.55, 0.45, 1);
+    transition: all 0.3s cubic-bezier(0, 0.55, 0.45, 1);
   }
 
   &::after {
@@ -63,10 +64,10 @@
 }
 .nav-btn:hover .line {
   &::after {
-    top: 0.7rem;
+    top: 0.8rem;
   }
   &::before {
-    top: -0.7rem;
+    top: -0.8rem;
   }
 }
 
