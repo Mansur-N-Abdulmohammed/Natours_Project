@@ -24,17 +24,17 @@
   animation: from-left 0.3s ease-in-out 1s backwards;
 }
 
-.header .header__hero--section {
+.header__hero--section {
   position: absolute;
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-transform: uppercase;
 }
-.header .header__hero--section .primary {
+.primary {
   backface-visibility: hidden;
 }
-.header .header__hero--section .primary-heading {
+.primary-heading {
   font-size: 5.2rem;
   font-weight: 500;
   letter-spacing: 3rem;
@@ -45,7 +45,7 @@
   animation-delay: 0.4s;
   opacity: 0;
 }
-.header .header__hero--section .primary-sub-heading {
+.primary-sub-heading {
   font-size: 1.6rem;
   letter-spacing: 1.6rem;
   font-weight: 700;
@@ -56,6 +56,14 @@
   opacity: 0;
 }
 
-/* .mew {
-  clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%);
-} */
+@media (max-width: 600px) {
+}
+@media (max-width: 1098px) {
+  html {
+    font-size: 2px !important;
+  }
+}
+@media (max-width: 1336px) {
+}
+@media (min-width: 1800px) {
+}

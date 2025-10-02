@@ -160,7 +160,6 @@ ocb-3 {
 /* --ACCESABILITY FOR TOUR SECTION-- */
 /* --------------------------------- */
 .great-card {
-  transition: all 0.5s ease;
   background-color: #fff;
   position: fixed;
   top: 50%;
@@ -248,6 +247,7 @@ ocb-3 {
     visibility: visible;
     opacity: 1;
     transform: scale(1);
+    transition: all 0.5s ease;
   }
   .image-side {
     background-image: url(../media/img/pexels-jordicosta-31293420.jpg);
@@ -262,6 +262,7 @@ ocb-3 {
     visibility: visible;
     opacity: 1;
     transform: scale(1);
+    transition: all 0.5s ease;
   }
 
   .image-side {
@@ -277,6 +278,7 @@ ocb-3 {
     visibility: visible;
     opacity: 1;
     transform: scale(1);
+    transition: all 0.5s ease;
   }
   .image-side {
     background-image: url(../media/img/pexels-lu-li-63700378-16526470.jpg);

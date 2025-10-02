@@ -16,7 +16,6 @@
   margin: 0;
   padding: 0;
   box-sizing: inherit;
-  outline: none;
   list-style: none;
   font-family: inherit;
 }
@@ -157,5 +156,12 @@ light:#7ed56f
 mid : #55c57a
 Dark : #28b485
 
+
+0-600px      phone
+600px-900px  tablet portrait
+900px-1200px tablet landscape
  
+1200px + X   larger screen
+
+
 */
