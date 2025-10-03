@@ -1,0 +1,49 @@
+/* _____________________________________ */
+/* _______________Phone_________________ */
+/* _____________________________________ */
+@media (max-width: 600px) {
+  html {
+    font-size: 10px;
+  }
+  body {
+    background-color: rgb(198, 255, 236);
+  }
+  .main-section {
+    margin: 0;
+    row-gap: 7rem;
+    padding: 3rem 2rem;
+  }
+  .custom-image-field {
+    .image-item {
+      width: 50%;
+    }
+  }
+  .primary-test-field {
+    align-items: start;
+    text-align: start;
+  }
+  /* .menu-item {
+    padding: 1rem;
+  } */
+  .section-tour {
+    grid-template-columns: 1fr 5fr 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .content-section {
+    padding: 0 3rem;
+  }
+}
+@media (max-width: 430px) {
+  html {
+    font-size: 8px;
+  }
+}
+@media (max-width: 470px) {
+  .menu-list {
+    .menu-item {
+      padding: 1.8rem 0.3rem;
+    }
+  }
+}

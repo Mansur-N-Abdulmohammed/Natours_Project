@@ -1,0 +1,138 @@
+/* _____________________________________ */
+/* ___tablet_landscape_+_Small_laptop___ */
+/* _____________________________________ */
+@media (max-width: 1336px) {
+  body {
+    background-color: rgb(255, 225, 230);
+  }
+  .section-fetured {
+    /* clip-path: none; */
+  }
+}
+@media (max-width: 1120px) {
+  .section-tour {
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: auto 1fr 1fr 1fr auto;
+    & > * {
+      grid-column: 2/3;
+    }
+  }
+}
+/* for main section only */
+@media (max-width: 910px) {
+  .main-section {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr 1fr;
+    column-gap: 0rem;
+    row-gap: 7rem;
+  }
+  .custom-image-field {
+    grid-column: 1/-1;
+  }
+  .custom-image-field {
+    position: static;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+
+    .image-item {
+      position: static;
+      width: 100%;
+      translate: none;
+      top: 0;
+      justify-self: center;
+    }
+
+    .x1 {
+      z-index: 2;
+      right: 0;
+      translate: 0rem 3rem;
+      &:hover {
+        z-index: 2;
+      }
+    }
+    .x2 {
+      z-index: 3;
+      left: 0;
+      width: 130%;
+      &:hover {
+        z-index: 3;
+      }
+    }
+    .x3 {
+      z-index: 1;
+      left: 50%;
+      translate: 0rem 3rem;
+      &:hover {
+        z-index: 1;
+      }
+    }
+    .image-item:hover {
+      transform: none;
+      outline: none;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .content-section {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0rem 5rem;
+    justify-items: center;
+    gap: 8rem;
+  }
+  .card {
+    padding: 5rem;
+  }
+}
+/* _____________________________________ */
+/* ___________tablet_portrait___________ */
+/* _____________________________________ */
+@media (max-width: 768px) {
+  body {
+    background-color: rgb(205, 255, 205);
+    padding: 0;
+  }
+  .nav-btn {
+    top: 3rem;
+    right: 3rem;
+  }
+  .circle-spawn {
+    top: 3.5rem;
+    right: 3.5rem;
+  }
+  .main-section {
+    text-align: center;
+    padding: 3rem;
+  }
+  .primary-test-field {
+    align-items: center;
+  }
+  .content-section {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0rem 10rem;
+    gap: 5rem;
+    justify-items: center;
+    align-items: center;
+  }
+  .card {
+    padding: 4rem 3rem;
+
+    &:hover {
+      transform: translateX(-2rem);
+    }
+  }
+}
+
+/* for header title size  only */
+@media (max-width: 655px) {
+  .primary-heading {
+    letter-spacing: 2rem;
+  }
+  .primary-heading {
+    letter-spacing: 1.8rem;
+  }
+  .primary-sub-heading {
+    letter-spacing: 1rem;
+  }
+}

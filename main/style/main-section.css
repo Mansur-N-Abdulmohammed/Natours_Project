@@ -83,11 +83,10 @@
 .custom-image-field {
   position: relative;
   .image-item {
-    width: 55%;
+    width: 20rem;
     position: absolute;
     top: 50%;
     left: 50%;
-    translate: -50% -50%;
     box-shadow: 0 1rem 5rem 1rem rgba(0, 0, 0, 0.2);
     cursor: pointer;
   }
@@ -113,6 +112,6 @@
   }
 }
 
-.custom-image-field:hover .image-item:not(:hover) {
+/* .custom-image-field:hover .image-item:not(:hover) {
   transform: scale(0.7);
-}
+} */

@@ -75,6 +75,7 @@
 
 .price-card {
   perspective: 50rem;
+  height: 50rem;
   -moz-perspective: 50rem;
   position: relative;
   padding-bottom: 54rem;

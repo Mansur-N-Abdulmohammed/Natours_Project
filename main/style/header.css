@@ -55,15 +55,3 @@
   animation-delay: 0.4s;
   opacity: 0;
 }
-
-@media (max-width: 600px) {
-}
-@media (max-width: 1098px) {
-  html {
-    font-size: 2px !important;
-  }
-}
-@media (max-width: 1336px) {
-}
-@media (min-width: 1800px) {
-}
